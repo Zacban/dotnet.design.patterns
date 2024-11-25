@@ -41,4 +41,4 @@ public class Journal {
     }
 ```
 
-The methods `Save(string filename, bool overwrite)` and `Load(string filename)` are not meant to be part of the Journal class as they handle persistance
+The methods `Save(string filename, bool overwrite)` and `Load(string filename)` are not meant to be part of the Journal class as they handle persistance.
