@@ -50,6 +50,52 @@ public class ProductFilter
     }
 }
 
+public interface ISpecification<T>
+{
+    bool IsSatisfied(T t);
+}
+
+public interface IFilter<T>
+{
+    IEnumerable<T> Filter(IEnumerable<T> items, ISpecification<T> spec);
+}
+
+public class ColorSpecification : ISpecification<Product>
+{
+    private Color _color;
+
+    public ColorSpecification(Color color)
+    {
+        _color = color;
+    }
+
+    public bool IsSatisfied(Product t)
+    {
+        return t.Color == _color;
+    }
+}
+
+public class SizeSpecification : ISpecification<Product>
+{
+    private Size _size;
+
+    public SizeSpecification(Size size) => _size = size;
+
+    public bool IsSatisfied(Product t)=>  t.Size == _size;
+}
+
+public class BetterFilter : IFilter<Product>
+{
+    public IEnumerable<Product> Filter(IEnumerable<Product> items, ISpecification<Product> spec)
+    {
+        foreach (var item in items)
+        {
+            if (spec.IsSatisfied(item))
+                yield return item;
+        }
+    }
+}
+
 class Program
 {
     static void Main(string[] args)
@@ -62,6 +108,13 @@ class Program
 
         Console.WriteLine("Green products (old):");
         foreach(var product in ProductFilter.FilterByColor(products, Color.Green))
+        {
+            Console.WriteLine($" - {product.Name} is green");
+        }
+
+        var bf = new BetterFilter();
+        Console.WriteLine("Green products (new):");
+        foreach (var product in bf.Filter(products, new ColorSpecification(Color.Green)))
         {
             Console.WriteLine($" - {product.Name} is green");
         }
