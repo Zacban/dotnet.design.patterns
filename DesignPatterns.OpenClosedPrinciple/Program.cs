@@ -84,6 +84,22 @@ public class SizeSpecification : ISpecification<Product>
     public bool IsSatisfied(Product t)=>  t.Size == _size;
 }
 
+public class AndSpecification<T> : ISpecification<T>
+{
+    private ISpecification<T> _first, _second;
+
+    public AndSpecification(ISpecification<T> first, ISpecification<T> second)
+    {
+        _first = first;
+        _second = second;
+    }
+
+    public bool IsSatisfied(T t)
+    {
+        return _first.IsSatisfied(t) && _second.IsSatisfied(t);
+    }
+}
+
 public class BetterFilter : IFilter<Product>
 {
     public IEnumerable<Product> Filter(IEnumerable<Product> items, ISpecification<Product> spec)
@@ -117,6 +133,12 @@ class Program
         foreach (var product in bf.Filter(products, new ColorSpecification(Color.Green)))
         {
             Console.WriteLine($" - {product.Name} is green");
+        }
+
+        Console.WriteLine("Large blue items");
+        foreach (var product in bf.Filter(products, new AndSpecification<Product>(new ColorSpecification(Color.Blue), new SizeSpecification(Size.Large))))
+        {
+            Console.WriteLine($" - {product.Name} is big and blue");
         }
     }
 }
