@@ -1,8 +1,8 @@
 ﻿namespace DesignPatterns.LiskovSubstitution;
 
 public class Rectangle {
-    public virtual int Width { get; set; }
-    public virtual int Height { get; set; }
+    public int Width { get; set; }
+    public int Height { get; set; }
 
     public Rectangle() {
     }
@@ -18,11 +18,11 @@ public class Rectangle {
 }
 
 public class Square : Rectangle {
-    public override int Width {
+    public new int Width {
         set => base.Width = base.Height = value;
     }
 
-    public override int Height {
+    public new int Height {
         set => base.Width = base.Height = value;
     }
 }
