@@ -15,10 +15,11 @@ public class HtmlBuilder
         _root.Name = rootName;
     }
 
-    public void AddChild(string childName, string childText)
+    public HtmlBuilder AddChild(string childName, string childText)
     {
         var e = new HtmlElement(childName, childText);
         _root.Elements.Add(e);
+        return this;
     }
 
     public override string ToString() => _root.ToString();
