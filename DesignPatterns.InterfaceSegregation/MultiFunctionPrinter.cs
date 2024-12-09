@@ -1,6 +1,6 @@
 namespace DesignPatterns.InterfaceSegregation;
 
-public class MultiFunctionPrinter : IMachine {
+public class MultiFunctionPrinter : IPrinter, IScanner, IFax {
     public void Print(Document d)
     {
         // Print
