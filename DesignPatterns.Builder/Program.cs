@@ -4,6 +4,8 @@ using static System.Console;
 
 namespace DesignPatterns.Builder;
 
+
+
 class Program
 {
     static void Main(string[] args)
@@ -26,5 +28,10 @@ class Program
         sb.Append("</ul>");
 
         WriteLine(sb);
+
+        var builder = new HtmlBuilder("ul");
+        builder.AddChild("li", "hello");
+        builder.AddChild("li", "world");
+        WriteLine(builder);
     }
 }
