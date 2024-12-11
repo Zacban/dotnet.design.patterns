@@ -20,11 +20,6 @@ class Program
         WriteLine(car);
         WriteLine(car2);
 
-        var person2 = new Functional.PersonBuilder()
-            .Called("Zacban")
-            .WorksAs("Programmer")
-            .Build();
-
-        WriteLine(person2);
+        FunctionalProgram.Run();
     }
 }
