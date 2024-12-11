@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using DesignPatterns.Builder.Faceted;
 using DesignPatterns.Builder.Functional;
 using DesignPatterns.Builder.Generics;
 using DesignPatterns.Builder.Stepwise;
@@ -21,5 +22,6 @@ class Program
         WriteLine(car2);
 
         FunctionalProgram.Run();
+        FacetedProgram.Run();
     }
 }
