@@ -1,9 +1,11 @@
-﻿namespace DesignPatterns.Factory;
+﻿using DesignPatterns.Factory.Point;
+
+namespace DesignPatterns.Factory;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        PointProgram.Run(args);
     }
 }
