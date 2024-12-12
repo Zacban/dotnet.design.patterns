@@ -5,9 +5,9 @@ public static class PointProgram
     public static void Run(string[] args)
     {
         Console.WriteLine("Point Program");
-        var point = new Point(2, 3, CoordinateSystem.Cartesian);
+        var point = Point.NewCartesianPoint(2, 3);
         Console.WriteLine(point);
-        var anotherPoint = new Point(2, 3, CoordinateSystem.Polar);
+        var anotherPoint = Point.NewPolarPoint(2, 3);
         Console.WriteLine(anotherPoint);
     }
 }
