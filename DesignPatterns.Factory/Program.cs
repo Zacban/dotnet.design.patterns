@@ -1,11 +1,13 @@
-﻿using DesignPatterns.Factory.Point;
+﻿using DesignPatterns.Factory.AsyncMethod;
+using DesignPatterns.Factory.Point;
 
 namespace DesignPatterns.Factory;
 
 class Program
 {
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
         PointProgram.Run(args);
+        await FooProgram.Run(args);
     }
 }
