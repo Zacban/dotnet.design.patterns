@@ -13,7 +13,7 @@ public class Foo
 
     private async Task<Foo> InitAsync()
     {
-        await Task.Delay(3000);
+        await Task.Delay(1000);
         return this;
     }
 
