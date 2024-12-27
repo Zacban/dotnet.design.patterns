@@ -7,7 +7,7 @@ namespace DesignPatterns.Prototype;
 public class Person
 {
     public string[] Names;
-    private Address Address;
+    public Address Address;
 
     public Person(string[] names, Address address)
     {
@@ -64,8 +64,12 @@ class Program
     static void Main(string[] args)
     {
         var john = new Person(new[] { "John", "Smith" }, new Address("London Road", 123));
+        var jane = new Person(john);
+        jane.Address.HouseNumber = 321;
 
         WriteLine(john);
+        WriteLine(jane);
+
     }
 }
 
