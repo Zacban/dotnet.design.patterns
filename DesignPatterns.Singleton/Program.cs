@@ -1,9 +1,11 @@
-﻿namespace DesignPatterns.Singleton;
+﻿using DesignPatterns.Singleton.Basic;
 
-class Program
+namespace DesignPatterns.Singleton;
+
+static class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        BasicProgram.Run(args);
     }
 }
