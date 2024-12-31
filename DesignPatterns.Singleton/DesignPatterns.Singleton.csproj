@@ -7,4 +7,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="capitals.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="autofac" Version="8.2.0" />
+    <PackageReference Include="morelinq" Version="4.3.0" />
+    <PackageReference Include="nunit" Version="4.3.2" />
+  </ItemGroup>
 </Project>

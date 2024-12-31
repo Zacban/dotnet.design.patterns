@@ -57,8 +57,7 @@ Madrid, 6840000
 Dallas, 6780000
 Houston, 6760000
 Philadelphia, 6700000
-Belo Horizonte, 6680000
-Washington, D.C., 6330000
+Washington D.C., 6330000
 Atlanta, 6310000
 Boston, 6280000
 Phoenix, 6260000
