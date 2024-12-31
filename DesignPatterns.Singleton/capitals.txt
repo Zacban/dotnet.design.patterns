@@ -1,0 +1,124 @@
+Tokyo, 37400068
+Delhi, 28514000
+Shanghai, 25582000
+São Paulo, 21650000
+Mexico City, 21581000
+Cairo, 20076000
+Mumbai, 19980000
+Beijing, 19618000
+Dhaka, 19578000
+Osaka, 19281000
+New York City, 18819000
+Karachi, 15400000
+Buenos Aires, 14967000
+Chongqing, 14838000
+Istanbul, 14657000
+Kolkata, 14667000
+Manila, 13923452
+Lagos, 13900000
+Rio de Janeiro, 13458000
+Tianjin, 13215000
+Kinshasa, 13200000
+Guangzhou, 13081000
+Los Angeles, 12750807
+Moscow, 12506468
+Shenzhen, 12528300
+Lahore, 12188000
+Bangalore, 12000000
+Paris, 11020000
+Bogotá, 10750000
+Jakarta, 10562000
+Chennai, 10400000
+Lima, 10320000
+Bangkok, 10300000
+Seoul, 9776000
+Nagoya, 9273000
+Hyderabad, 9200000
+London, 9126366
+Tehran, 8846782
+Chicago, 8675982
+Chengdu, 8630000
+Nanjing, 8330000
+Wuhan, 8200000
+Ho Chi Minh City, 8100000
+Luanda, 8085000
+Ahmedabad, 8070000
+Kuala Lumpur, 8000000
+Hong Kong, 7451000
+Hanoi, 7433000
+Riyadh, 7200000
+Baghdad, 7180889
+Santiago, 7150000
+Toronto, 7040000
+Miami, 6930000
+Pune, 6900000
+Belo Horizonte, 6880000
+Madrid, 6840000
+Dallas, 6780000
+Houston, 6760000
+Philadelphia, 6700000
+Washington D.C., 6330000
+Atlanta, 6310000
+Boston, 6280000
+Phoenix, 6260000
+San Francisco, 6220000
+Detroit, 6180000
+Seattle, 6160000
+San Diego, 6140000
+Minneapolis, 6120000
+Tampa, 6100000
+Denver, 6080000
+Baltimore, 6060000
+St. Louis, 6040000
+Charlotte, 6020000
+Orlando, 6000000
+San Antonio, 5980000
+Portland, 5960000
+Sacramento, 5940000
+Las Vegas, 5920000
+Cleveland, 5900000
+Indianapolis, 5880000
+Kansas City, 5860000
+Columbus, 5840000
+Austin, 5820000
+San Jose, 5800000
+Nashville, 5780000
+Virginia Beach, 5760000
+Providence, 5740000
+Milwaukee, 5720000
+Jacksonville, 5700000
+Memphis, 5680000
+Louisville, 5660000
+Richmond, 5640000
+New Orleans, 5620000
+Hartford, 5600000
+Salt Lake City, 5580000
+Raleigh, 5560000
+Oklahoma City, 5540000
+Birmingham, 5520000
+Buffalo, 5500000
+Rochester, 5480000
+Grand Rapids, 5460000
+Tucson, 5440000
+Bridgeport, 5420000
+Albany, 5400000
+Omaha, 5380000
+Albuquerque, 5360000
+Tulsa, 5340000
+Fresno, 5320000
+Worcester, 5300000
+New Haven, 5280000
+Des Moines, 5260000
+Springfield, 5240000
+Knoxville, 5220000
+Baton Rouge, 5200000
+Dayton, 5180000
+Little Rock, 5160000
+Charleston, 5140000
+Savannah, 5120000
+Mobile, 5100000
+Harrisburg, 5080000
+Huntsville, 5060000
+Chattanooga, 5040000
+Greenville, 5020000
+Fort Wayne, 5000000
