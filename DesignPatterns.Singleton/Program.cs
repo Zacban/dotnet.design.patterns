@@ -10,6 +10,7 @@ static class Program
     {
         BasicProgram.Run(args);
         DependencyInjectionProgram.Run(args);
+        ThreadSingletonProgram.Run(args);
     }
 }
 
