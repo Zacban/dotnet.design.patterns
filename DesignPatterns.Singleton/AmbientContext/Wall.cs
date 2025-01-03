@@ -6,11 +6,11 @@ public class Wall
     public Point End { get; set; }
     public int Height { get; set; }
 
-    public Wall(Point start, Point end, int height)
+    public Wall(Point start, Point end)
     {
         Start = start;
         End = end;
-        Height = height;
+        Height = BuildingContext.WallHeight;
     }
 }
 
