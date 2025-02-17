@@ -10,8 +10,10 @@ public class Wall
     {
         Start = start;
         End = end;
-        Height = BuildingContext.WallHeight;
+        Height = BuildingContext.Current.WallHeight;
     }
+
+    public override string ToString() => $"{nameof(Start)}: {Start}, {nameof(End)}: {End},  {nameof(Height)}: {Height}";
 }
 
 public struct Point
@@ -24,4 +26,6 @@ public struct Point
         X = x;
         Y = y;
     }
+
+    public override string ToString() => $"({X}, {Y})";
 }

@@ -8,9 +8,10 @@ static class Program
 {
     static void Main(string[] args)
     {
-        BasicProgram.Run(args);
-        DependencyInjectionProgram.Run(args);
-        ThreadSingletonProgram.Run(args);
+        // BasicProgram.Run(args);
+        // DependencyInjectionProgram.Run(args);
+        // ThreadSingletonProgram.Run(args);
+        AmbientProgram.Run(args);
     }
 }
 
