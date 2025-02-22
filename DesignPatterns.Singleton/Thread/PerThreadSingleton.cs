@@ -4,7 +4,7 @@ public sealed class PerThreadSingleton
 {
     private static readonly ThreadLocal<PerThreadSingleton> threadInstance = new(() => new PerThreadSingleton());
 
-    public static PerThreadSingleton Instance => threadInstance.Value;
+    public static PerThreadSingleton Instance => threadInstance.Value ?? throw new InvalidOperationException("ThreadLocal is not initialized.");
 
     public int Id;
     private PerThreadSingleton()
